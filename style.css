@@ -1,0 +1,23 @@
+:root{--bg:#13244d;--grid:rgba(140,175,255,.10);--ink:#f4ead2;--muted:#a8b5d9;--torch:#ffd23c;--dark:#16182a;--card:#1b2d5c;--mint:#6fe0b0;--pink:#ff7aa0}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:22px 22px;color:var(--ink);font-family:Rubik,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+a{color:var(--torch)}
+.wrap{max-width:820px;margin:0 auto;padding:28px 18px 60px}
+nav{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-bottom:26px;font-weight:700}
+nav a{color:var(--ink);text-decoration:none;padding:6px 12px;border:2px solid rgba(244,234,210,.35);border-radius:10px}
+nav a:hover,nav a.on{background:var(--torch);color:var(--dark);border-color:var(--torch)}
+.logo{font-weight:900;font-size:clamp(52px,14vw,92px);line-height:.95;color:var(--torch);text-align:center;margin:10px 0 0;-webkit-text-stroke:4px var(--dark);paint-order:stroke fill;text-shadow:0 6px 0 var(--dark);transform:rotate(-3deg)}
+.tag{display:table;margin:14px auto 0;background:var(--pink);color:var(--dark);font-weight:900;letter-spacing:.1em;text-transform:uppercase;font-size:14px;padding:4px 14px;border:2.5px solid var(--dark);box-shadow:0 3px 0 var(--dark);transform:rotate(1.5deg)}
+.hero{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin:26px 0 8px;flex-wrap:wrap}
+.hero img{height:150px;filter:drop-shadow(0 6px 0 rgba(0,0,0,.25))}
+.hero img.small{height:80px}
+.card{background:var(--card);border:2.5px solid rgba(244,234,210,.25);border-radius:16px;padding:20px 22px;margin:18px 0}
+h1{font-size:30px;margin:0 0 6px}
+h2{font-size:21px;margin:22px 0 6px;color:var(--torch)}
+p,li{color:var(--ink)}
+.muted{color:var(--muted);font-size:14px}
+ul{padding-left:20px}
+.lang{display:inline-block;background:var(--mint);color:var(--dark);font-weight:900;border-radius:6px;padding:1px 8px;font-size:12px;letter-spacing:.08em;margin-bottom:4px}
+.btn{display:inline-block;background:var(--torch);color:var(--dark);font-weight:900;text-decoration:none;padding:12px 20px;border-radius:12px;border:2.5px solid var(--dark);box-shadow:0 4px 0 var(--dark)}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
